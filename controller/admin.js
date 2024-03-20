@@ -33,8 +33,9 @@ module.exports.getAdminFromJwt = async (req, res, next) => {
       error.message = error.message || "an error occured try later"
       return next(error)
    }
-
 }
+
+
 
 
 module.exports.signup = async (req, res, next) => {
@@ -67,6 +68,9 @@ module.exports.signup = async (req, res, next) => {
          error.statusCode = 300
          return next(error)
       }
+
+
+   
 
 
       //hence proceed to create models of admin and token
@@ -301,7 +305,6 @@ module.exports.deleteCase = async (req, res, next) => {
 
 
 }
-
 
 //attorneys controller section
 module.exports.fetchAttorneys = async (req, res, next) => {

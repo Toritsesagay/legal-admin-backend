@@ -139,8 +139,6 @@ const blogSchema = new mongoose.Schema({
     blog_text2: {
         type: String
     },
-
-
 })
 
 
@@ -203,3 +201,4 @@ module.exports.Admin = Admin
 module.exports.Attorney = Attorney
 module.exports.Blog = Blog
 module.exports.BlogCase =  BlogCase
+
